@@ -49,7 +49,7 @@ def main():
             "host": "localhost",
             "port": "5432",
             "database": "postgres",
-            "user": "maria_zhiganova",
+            "user": "mikhail_lemdyanov",
             "password": DATABASE_PASSWORD,
         }
 
@@ -65,7 +65,7 @@ def main():
         print(vacancies_list)
         insert_data_in_vacancies(params, db_name, vacancies_list)
 
-        db_option = DBManager("localhost", db_name, "maria_zhiganova", DATABASE_PASSWORD)
+        db_option = DBManager("localhost", db_name, "mikhail_lemdyanov", DATABASE_PASSWORD)
 
         while True:
             print(
