@@ -12,7 +12,7 @@ https://github.com/MikhailLemdyanov/HHDataBase
 ```
 2. Установите зависимости:
 ```
-pip install -r requirements.txt
+poetry install
 ```
 
 ## Использование:

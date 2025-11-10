@@ -58,7 +58,7 @@ def create_vacancies_table(params: dict, db_name: str) -> None:
                         salary INTEGER,
                         published_at DATE,
                         employer_id VARCHAR NOT NULL,
-                        CONSTRAINT fk_employer_id FOREIGN KEY(employer_id) 
+                        CONSTRAINT fk_employer_id FOREIGN KEY(employer_id)
                         REFERENCES employers(employer_id) ON DELETE CASCADE,
                         url VARCHAR NOT NULL
                     );

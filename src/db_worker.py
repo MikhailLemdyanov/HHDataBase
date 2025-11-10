@@ -27,7 +27,7 @@ class DBManager:
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(
-                    """SELECT e.name, COUNT(v.id) AS vacancy_count 
+                    """SELECT e.name, COUNT(v.id) AS vacancy_count
                     FROM employers e
                     LEFT JOIN vacancies v USING(employer_id)
                     GROUP BY e.name;
@@ -49,7 +49,7 @@ class DBManager:
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(
-                    """SELECT v.name AS vacancy_name, e.name AS company_name, v.salary, v.url 
+                    """SELECT v.name AS vacancy_name, e.name AS company_name, v.salary, v.url
                     FROM vacancies v
                     LEFT JOIN employers e USING(employer_id);
                     """
